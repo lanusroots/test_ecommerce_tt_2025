@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Box Clasico",
+    "price": 44.000,
+    "category": "Especiales",
+    "description" : "",
+    "imageUrl": "/images/box_clasic.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Box Infantil",
+    "price": 49.99,
+    "category": "Especiales",
+    "description" : "",
+    "imageUrl": "/images/box_infantil.webp"
+  },
+  {
+    "id": 3,
+    "name": "Torta Brownie",
+    "price": 46.350,
+    "category": "Tartas y Tortas",
+    "description" : "",
+    "imageUrl": "/images/brownie.webp"
+  },
+  {
+    "id": 4,
+    "name": "Macarons",
+    "price": 22.900,
+    "category": "Pastelería Clásica",
+    "description" : "",
+    "imageUrl": "/images/macarons.webp"
+  },
+  {
+    "id": 5,
+    "name": "Muffin Clásico",
+    "price": 17.300,
+    "category": "Muffins y Cupcakes",
+    "description" : "",
+    "imageUrl": "/images/muffin.png"
+  },
+  {
+    "id": 6,
+    "name": "Torta Tiramisu",
+    "price": 47.550,
+    "category": "Tartas y Tortas",
+    "description" : "",
+    "imageUrl": "/images/tiramisu.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Budín",
+    "price": 16.060,
+    "category": "Pastelería Clásica",
+    "description" : "",
+    "imageUrl": "/images/budin.png"
+  },
+  {
+    "id": 8,
+    "name": "Chocotorta",
+    "price": 53.500,
+    "category": "Tartas y Tortas",
+    "description" : "",
+    "imageUrl": "/images/chocotorta.webp"
+  },
+  {
+    "id": 9,
+    "name": "Alfajor sablé",
+    "price": 20.760,
+    "category": "Pastelería Clásica",
+    "description" : "",
+    "imageUrl": "/images/alfajor_sable.webp"
+  },
+  {
+    "id": 10,
+    "name": "Húmeda de banana",
+    "price": 51.080,
+    "category": "Tartas y Tortas",
+    "description" : "",
+    "imageUrl": "/images/humeda_banana.webp"
+  },
+  {
+    "id": 11,
+    "name": "Scones dulces",
+    "price": 4.980,
+    "category": "Pastelería Clásica",
+    "description" : "",
+    "imageUrl": "/images/scons.webp"
+  },
+  {
+    "id": 12,
+    "name": "Tarta de manzana",
+    "price": 45.200,
+    "category": "Tartas y Tortas",
+    "description" : "",
+    "imageUrl": "/images/tarta_manzana.webp"
+  },
+  {
+    "id": 13,
+    "name": "Cookies personalizadas",
+    "price": 3.500,
+    "category": "Pastelería Clásica",
+    "description" : "",
+    "imageUrl": "/images/cokies.webp"
+  },
+  {
+    "id": 14,
+    "name": "Rogel",
+    "price": 50.360,
+    "category": "Tartas y Tortas",
+    "description" : "",
+    "imageUrl": "/images/rogel.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Crocantes de cereal",
+    "price": 21.300,
+    "category": "Pastelería Clásica",
+    "description" : "",
+    "imageUrl": "/images/crocante_cereal.webp"
+  },
+  {
+    "id": 16,
+    "name": "Lemon Pie",
+    "price": 42.820,
+    "category": "Tartas y Tortas",
+    "description" : "",
+    "imageUrl": "/images/lemon_pie.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Cocadas",
+    "price": 8.020,
+    "category": "Pastelería Clásica",
+    "description" : "",
+    "imageUrl": "/images/cocadas.webp"
+  },
+  {
+    "id": 18,
+    "name": "Cheesecake Frutos",
+    "price": 55.090,
+    "category": "Tartas y Tortas",
+    "description" : "",
+    "imageUrl": "/images/frutos.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Red Velvet",
+    "price": 63.440,
+    "category": "Tartas y Tortas",
+    "description" : "",
+    "imageUrl": "/images/revelvet.webp"
+  },
+  {
+    "id": 20,
+    "name": "Torta Oreo",
+    "price": 83.200,
+    "category": "Tartas y Tortas",
+    "description" : "",
+    "imageUrl": "/images/oreo.jpg"
+  }
+]
