@@ -15,7 +15,7 @@ function App() {
             <Route path="/detail/:id" element={<ItemDetailContainer />} />
             <Route path="/nosotros" element={<h2>🚧 Página en construcción 🚧</h2>} />
             <Route path="/productos" element={<h2>🚧 Página en construcción 🚧</h2>} />
-            <Route path="/contacto" element={<h2>🚧 ágina en construcción 🚧</h2>} />
+            <Route path="/contacto" element={<h2>🚧 Página en construcción 🚧</h2>} />
             <Route path="*" element={<h2>Página no encontrada 😢</h2>} />
           </Routes>
         </CartProvider>
