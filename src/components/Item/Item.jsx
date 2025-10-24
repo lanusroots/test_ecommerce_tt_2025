@@ -1,9 +1,23 @@
-export const Item = ({name, price, description, imageUrl, children}) => {
+import { Link } from "react-router-dom";
+import { useCartContext } from "../../context/CartContext/UseCartContext";
+import "./Item.css";
+
+export const Item = ({id, name, price, description, imageUrl}) => {
+    const { addItem } = useCartContext();
+    
     return <article className="product-item">
-        <img src={imageUrl} alt={description} />
-        <h2 className="product-title">{name}</h2>
+        <Link to={`/detail/${id}`}>
+            <img src={imageUrl} alt={description} />
+        </Link>
+        <Link to={`/detail/${id}`}>
+            <h2 className="product-title">{name}</h2>
+        </Link>
         <p>Precio: ${price}</p>
         <p>Descripcion {description}</p>
-        {children}
+        <button onClick={() => {
+            addItem({id, name, price, description, imageUrl});
+        }}>
+            Agregar al carrito
+        </button>
     </article>
 }

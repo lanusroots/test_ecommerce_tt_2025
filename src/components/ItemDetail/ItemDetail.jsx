@@ -1,14 +1,6 @@
-import { useCartContext } from "../../context/CartContext/UseCartContext"
 import { Item } from "../Item/Item"
+import "./ItemDetail.css";
 
 export const ItemDetail = ({detail}) => {
-    const {addItem} = useCartContext()
-
-    return (
-        <Item {...detail}>
-            <button onClick={() => {
-                addItem(detail)
-            }}>Enviar al carrito</button>
-        </Item>
-    )
+    return <Item {...detail} />
 }

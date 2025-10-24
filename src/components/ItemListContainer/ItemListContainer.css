@@ -1,0 +1,33 @@
+/* Contenedor principal de productos */
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2b2b2b;
+  margin-bottom: 40px;
+}
+
+section > p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  section h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,54 @@
+/* Vista detallada del producto */
+/* Reutiliza los estilos de .product-item pero con ajustes */
+
+main .product-item {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main .product-item img {
+  height: 400px;
+}
+
+main .product-title {
+  font-size: 2rem;
+  margin: 20px 30px 15px;
+}
+
+main .product-item p {
+  font-size: 1rem;
+  margin: 10px 30px;
+  line-height: 1.6;
+}
+
+main .product-item p:first-of-type {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+main .product-item button {
+  margin: 30px;
+  padding: 14px 28px;
+  font-size: 1.05rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main .product-item img {
+    height: 300px;
+  }
+
+  main .product-title {
+    font-size: 1.6rem;
+    margin: 15px 20px 10px;
+  }
+
+  main .product-item p {
+    margin: 8px 20px;
+  }
+
+  main .product-item button {
+    margin: 20px;
+  }
+}

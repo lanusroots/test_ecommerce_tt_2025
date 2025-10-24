@@ -1,0 +1,51 @@
+/* Grid de productos - Aplicar al padre en ItemListContainer */
+/* En ItemListContainer.jsx agregar className="product-grid" al contenedor */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 20px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Links de productos */
+.product-grid a {
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.product-grid a:hover {
+  transform: scale(1.02);
+}
+
+/* Mensaje sin productos */
+.product-grid + p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
