@@ -30,9 +30,16 @@
   text-align: center;
 }
 
-/* Ocultar descripción completa en las cards */
-.product-item p:nth-of-type(2) {
+/* Ocultar descripción solo en el listado, NO en el detalle */
+.product-grid .product-item p:nth-of-type(2) {
   display: none;
+}
+
+/* Mostrar descripción en el detalle */
+.item-detail-wrapper .product-item p:nth-of-type(2) {
+  display: block;
+  text-align: center;
+  line-height: 1.6;
 }
 
 /* Precio */

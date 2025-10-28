@@ -13,7 +13,7 @@ export const Item = ({id, name, price, description, imageUrl}) => {
             <h2 className="product-title">{name}</h2>
         </Link>
         <p>Precio: ${price}</p>
-        <p>Descripcion {description}</p>
+        <p>{description}</p>
         <button onClick={() => {
             addItem({id, name, price, description, imageUrl});
         }}>
