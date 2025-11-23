@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import { useCartContext } from "../../context/CartContext/useCartContext";
-import "./Item.css";
+import { Link } from "react-router-dom"
+import { useCartContext } from "../../context/CartContext/useCartContext"
+import "./Item.css"
 
 export const Item = ({id, name, price, description, imageUrl}) => {
-    const { addItem } = useCartContext();
+    const { addItem } = useCartContext()
     
     return <article className="product-item">
         <Link to={`/detail/${id}`}>

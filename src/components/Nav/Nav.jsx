@@ -20,10 +20,11 @@ export const Nav = () => {
                 <Link to={"/contacto/"}>CONTACTO</Link>
             </li>
             <li>
-                <Link>CARRITO</Link>
+                <Link to={"/carrito/"}>CARRITO
                 {getTotalItems() > 0 && (
                     <span className="in-cart">{getTotalItems()}</span>
                 )}
+                </Link>
             </li>
         </ul>
     </nav>
