@@ -4,40 +4,40 @@ import "./Count.css"
 export const Count = ({ btnText, onConfirm }) => {
   const [count, setCount] = useState(0)
 
-  const increment = () => {
-    setCount((prev) => prev + 1);
-  }
+  const increment = () => setCount(prev => prev + 1)
 
-  const decrement = () => {
-    setCount((prev) => (prev > 0 ? prev - 1 : 0));
-  }
+  const decrement = () =>
+    setCount(prev => (prev > 0 ? prev - 1 : 0))
 
   const confirm = () => {
-    if (count > 0) {
-      onConfirm(count);
-    }
+    if (count > 0) onConfirm(count)
   }
 
   return (
     <div className="count-container">
-      <div className="count-buttons">
+      
+      {/* Bloque de botones */}
+      <div className="count-box">
         <button
-          className="btn-panaderia"
-          onClick={decrement}
+          className="count-btn"
           disabled={count === 0}
+          onClick={decrement}
         >
           -
         </button>
-        <span>{count}</span>
-        <button className="btn-panaderia" onClick={increment}>
+
+        <span className="count-value">{count}</span>
+
+        <button className="count-btn" onClick={increment}>
           +
         </button>
       </div>
 
+      {/* Botón agregar al carrito */}
       <button
-        className="btn-panaderia"
-        onClick={confirm}
+        className="add-cart-btn"
         disabled={count === 0}
+        onClick={confirm}
       >
         {btnText}
       </button>

@@ -1,29 +1,38 @@
 import { useEffect, useState } from "react"
-import { ItemList } from "../ItemList/ItemList";
-import "./ItemListContainer.css";
+import { ItemList } from "../ItemList/ItemList"
+import { getProducts } from "../../services/products"
+import "./ItemListContainer.css"
 
 export const ItemListContainer = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState("")
 
-  // Cargar productos
   useEffect(() => {
-    fetch("/data/products.json")
-      .then((res) => {
-        if (!res.ok) {
-            throw new Error("Hubo un problema al buscar productos")
-        }
-        return res.json()
-      })
-      .then((data) => setProducts(data))
-      .catch((err) => console.log(err))
+    const fetchProducts = async () => {
+      try {
+        const data = await getProducts()
+        setProducts(data)
+      } catch (err) {
+        console.log(err)
+        setError("Hubo un problema al obtener los productos")
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchProducts()
   }, [])
+
+  if (loading) return <p>Cargando productos...</p>
+  if (error) return <p>{error}</p>
 
   return (
     <section>
-    <h1>Bienvenidos!</h1>
-    <div className="product-grid">
-      <ItemList list={products}/>
-    </div>
-  </section>
+      <h1>Bienvenidos!</h1>
+      <div className="product-grid">
+        <ItemList list={products} />
+      </div>
+    </section>
   )
 }

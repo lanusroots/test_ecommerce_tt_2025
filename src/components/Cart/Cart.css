@@ -1,41 +1,143 @@
-.item-list-container h2 {
-  width: 100%;
-  text-align: center;
-  margin: 2rem 0rem;
+.cart-wrapper {
+  max-width: 900px;
+  padding: 25px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+  font-family: "Poppins", sans-serif;
 }
 
-.btn-container {
-  width: 100%;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+.cart-title {
+  font-size: 22px;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
 }
 
-.total-pagar {
-  width: 100%;
+.cart-header {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-items {
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.cart-item-left {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.cart-item-left img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cart-description {
+  font-size: 13px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.cart-qty-label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.cart-item-right {
+  text-align: right;
+}
+
+.cart-subtotal {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cart-delete {
+  margin-top: 8px;
+  color: red;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.cart-delete:hover {
+  opacity: 1;
+}
+
+.cart-footer {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.cart-total {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+  color: #a5d5c4;
+}
+
+.cart-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-empty {
+  padding: 12px 20px;
+  background: #6ab497;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-checkout {
+  padding: 12px 20px;
+  background: #8ac3b1;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cart-empty {
   text-align: center;
+  padding: 40px;
 }
-.item-list-container > .product-item{
-  display: flex;
-  flex-direction: row;
-  max-width: 100%; /* 250px */
-  margin: 0px;
-}
-.item-list-container >.product-item img{
-  width: 20%;
-  height: auto;
-}
-.item-list-container >.product-item p{
-  display: none;
-}
-.item-list-container > .product-item span{
-  padding: 19px;
-}
-.btn-panaderia-cart-elimimar{
-  display: flex;
-  padding: 15px;
-  height: 55px;
-  margin: 1rem 0rem; /*18px 0px*/
+
+.btn-back {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 12px 20px;
+  background: #a5d5c4;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
 }

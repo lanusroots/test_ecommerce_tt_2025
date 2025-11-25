@@ -1,12 +1,75 @@
+/* CONTENEDOR GENERAL */
 .count-container {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   align-items: center;
-  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
-.count-buttons {
+/* BLOQUE (- 0 +) */
+.count-box {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+}
+
+/* BOTONES - y + */
+.count-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  font-weight: 500;
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.count-btn:hover:not(:disabled) {
+  background: #f1f1f1;
+}
+
+.count-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: #777;
+}
+
+/* VALOR DEL CONTADOR */
+.count-value {
+  font-size: 24px;
+  font-weight: 600;
+  width: 40px;
+  text-align: center;
+}
+
+/* BOTÓN FINAL: AGREGAR AL CARRITO */
+.add-cart-btn {
+  width: 100%;
+  padding: 18px 0;
+  font-size: 16px;
+  font-weight: 600;
+  background: #d9b08c; /* color parecido a la imagen que pasaste */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s ease;
+  cursor: pointer;
+  max-width: 430px;
+}
+
+/* Habilitado */
+.add-cart-btn:hover:not(:disabled) {
+  background: #c99a75;
+}
+
+/* Deshabilitado */
+.add-cart-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
