@@ -30,7 +30,6 @@ export const Cart = () => {
                     <h3>{prod.name}</h3>
                     <p className="cart-description">{prod.description}</p>
 
-                    {/* Mantengo EXACTAMENTE tu lógica */}
                     <span className="cart-qty-label">
                       Cantidad: {prod.quantity}
                     </span>

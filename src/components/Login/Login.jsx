@@ -42,7 +42,6 @@ export const Login = () => {
           name="name"
           value={userForm.name}
           onChange={handleChange}
-          placeholder="ej.: tunombre@email.com"
         />
       </div>
 

@@ -1,3 +1,7 @@
+/* -------------------------------------------------
+   ItemDetail.css — Normalizado
+------------------------------------------------- */
+
 .product-detail {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -5,28 +9,23 @@
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
-  font-family: "Poppins", sans-serif;
 }
 
-/* IMAGEN IZQUIERDA */
 .product-detail__image-wrapper {
   width: 100%;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-medium);
 }
 
 .product-detail__image {
   width: 100%;
-  height: auto;
   object-fit: cover;
 }
 
-/* INFO DERECHA */
 .product-detail__info {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 .product-detail__title {
@@ -38,22 +37,26 @@
 .product-detail__price {
   font-size: 28px;
   font-weight: 700;
-  color: #6ab497; /* Verde pastel TUYO */
+  color: var(--color-primary);
   margin-bottom: 20px;
 }
 
-/* DESCRIPCIÓN */
 .product-detail__description {
   font-size: 16px;
-  color: #333;
+  color: var(--color-subtext);
   line-height: 1.6;
   margin-bottom: 40px;
 }
 
-/* CONTADOR CENTRADO */
 .product-detail__counter {
   margin-top: 20px;
-  width: 100%;
   display: flex;
   justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
 }

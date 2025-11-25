@@ -62,7 +62,7 @@ export const ProductFormUI = ({
           />
           {errors.file && <p className="error">{errors.file}</p>}
         </div>
-        <button className="btn-panaderia" type="submit" disabled={loading}>
+        <button className="btn-primary" type="submit" disabled={loading}>
           {loading ? "Guardando..." : "Guardar"}
         </button>
       </form>

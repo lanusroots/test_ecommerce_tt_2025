@@ -1,48 +1,60 @@
+/* -------------------------------------------------
+   Footer.css — Normalizado
+------------------------------------------------- */
+/* -------------------------------------------------
+   Footer.css — Normalizado, centrado y consistente
+------------------------------------------------- */
+
 .footer {
   width: 100%;
-  background: var(--color-surface);
+  padding: 30px 0;
+  background-color: var(--color-background);
   border-top: 1px solid var(--color-border);
-  padding: 14px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.03);
+  margin-top: 40px;
 }
 
+/* Contenedor centrado */
 .footer__content {
-  width: 90%;
-  max-width: 1200px;
+  max-width: 1200px;   /* mismo ancho que el nav */
+  margin: 0 auto;
+  padding: 0 20px;
+
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Texto */
+.footer__content p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
   color: var(--color-subtext);
 }
 
-.footer__icon {
-  margin: 0 5px;
+.footer__content strong {
+  color: var(--color-text);
 }
 
+/* Icono 🎂 */
+.footer__icon {
+  font-size: 1.1rem;
+}
+
+/* Redes sociales */
 .footer__socials {
   display: flex;
-  gap: 14px;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .footer__socials a {
-  color: #82b4b1;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  color: var(--color-text);
+  font-size: 1.3rem;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer__socials a:hover {
   color: var(--color-primary);
-}
-
-/* 📱 Responsive */
-@media (max-width: 600px) {
-  .footer__content {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
+  transform: translateY(-2px);
 }

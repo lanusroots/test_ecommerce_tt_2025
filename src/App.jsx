@@ -12,6 +12,8 @@ import { RutaProtegida } from "./components/RutaProtegida/RutaProtegida"
 import { ProductFormContainer } from "./components/AdminComponents/ProductFormContainer/ProductFormContainer"
 import { Login } from "./components/Login/Login"
 import { Home } from "./components/Home/Home"
+import { Nosotros } from "./pages/Nosotros/Nosotros"
+import { Contacto } from "./pages/Contacto/Contacto"
 
 function App() {
   return (
@@ -22,9 +24,9 @@ function App() {
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/detail/:id" element={<ItemDetailContainer />} />
-            <Route path="/nosotros" element={<h2>🚧 Página en construcción 🚧</h2>} />
+            <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/productos" element={<ItemListContainer />} />
-            <Route path="/contacto" element={<h2>🚧 Página en construcción 🚧</h2>} />
+            <Route path="/contacto" element={<Contacto />} />
             <Route path="/carrito" element={<Cart />} />
             <Route path="*" element={<h2>Página no encontrada 😢</h2>} />
           </Route>
