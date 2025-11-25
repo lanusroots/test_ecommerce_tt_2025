@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 import { Item } from "../Item/Item";
-import "./ItemList.css";
 
-export const ItemList = ({ list }) => {
-  return (
+export const ItemList =({list}) => {
+    return (
     <>
-      {list.length ? (
-        list.map((prod) => (
-          <Item key={prod.id} {...prod} />
-        ))
-      ) : (
-        <p>No hay productos</p>
-      )}
+    {list.length ? (
+     list.map((prod) =>( 
+        <Link to={`/detail/${prod.id}`}  key={prod.id}>
+            <Item {...prod} hideDescription={true} />
+        </Link>))
+     ): ( 
+        <p>No hay productos</p> 
+     )}
     </>
-  );
+    );
 };

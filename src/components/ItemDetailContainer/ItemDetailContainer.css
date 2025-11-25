@@ -1,23 +1,11 @@
-/* Contenedor del detalle */
-main {
+/* -------------------------------------------------
+   ItemDetailContainer.css — Normalizado
+------------------------------------------------- */
+
+.detail-container {
   max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  min-height: 60vh;
+  margin: 40px auto;
+  padding: 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-main > p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #666;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  main {
-    padding: 30px 15px;
-  }
 }
